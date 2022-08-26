@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+    min-height: 3rem;
+}
+
+.flex-nav > svg {
+    width: map-get($sizes, 1150);
+    height: map-get($sizes, 1150);
+
+    @include mq(small) {
+        width: map-get($sizes, 1250);
+        height: map-get($sizes, 1250);
+    }
+
+    circle {
+
+        @include mq(small) {
+            cx: map-get($sizes, 800);
+            cy: map-get($sizes, 800);
+            r: map-get($sizes, 100);
+        }
+    }
+}

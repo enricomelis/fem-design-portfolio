@@ -21,6 +21,10 @@
     @include card-title;
 }
 
-.subtitle {
-    @include subtitle;
+.subtitle__top {
+    @include subtitle__top;
+}
+
+.subtitle__bottom {
+    @include subtitle__bottom;
 }

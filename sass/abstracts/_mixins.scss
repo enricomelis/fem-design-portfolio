@@ -64,7 +64,7 @@
 
 @mixin description__bottom() {
     @include description();
-    color: map-get($colors, neutral, 100);
+    color: map-get($colors, neutral, 200);
 }
 
 @mixin card-title() {
@@ -78,7 +78,6 @@
     font-size: $fs-subtitle-mobile;
     font-family: $ff-subtitle;
     font-weight: $fw-subtitle;
-    color: map-get($colors, neutral, 900);
 
     @include mq(small){
         font-size: $fs-subtitle-tablet;
@@ -87,4 +86,14 @@
     @include mq(medium){
         font-size: $fs-subtitle-desktop;
     }
+}
+
+@mixin subtitle__top {
+    @include subtitle();
+    color: map-get($colors, neutral, 900);
+}
+
+@mixin subtitle__bottom {
+    @include subtitle();
+    color: map-get($colors, neutral, 200);
 }

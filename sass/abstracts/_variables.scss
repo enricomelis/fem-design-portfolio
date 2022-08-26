@@ -10,7 +10,8 @@ $colors: (
         motion-graphics: hsl(314, 45, 23)
     ),
     neutral: (
-        100: hsl(28, 100%, 97%),
+        100: hsl(0, 0%, 100%),
+        200: hsl(28, 100%, 97%),
         500: hsl(30, 5%, 45%),
         900: hsl(0, 0%, 1%)
     ),
@@ -32,19 +33,21 @@ $breakpoints: (
 );
 
 $sizes: (
-    100: .875rem,
-    200: 1rem,
-    300: 1.125rem,
-    400: 1.25rem,
-    500: 1.5rem,
-    600: 1.625rem,
-    700: 1.75rem,
-    800: 2rem,
-    900: 2.25rem,
-    1000: 2.5rem,
-    1100: 2.75rem,
-    1200: 3.5rem,
-    1300: 4.375rem
+    100: .875rem, // 14px
+    200: 1rem, // 16px
+    300: 1.125rem, // 18px
+    400: 1.25rem, // 20px
+    500: 1.5rem, // 24px
+    600: 1.625rem, // 26px
+    700: 1.75rem, // 28px
+    800: 2rem, // 32px
+    900: 2.25rem, // 36px
+    1000: 2.5rem, // 40px
+    1100: 2.75rem, // 44px
+    1150: 3rem, // 48px
+    1200: 3.5rem, // 56px
+    1250: 4rem,
+    1300: 4.375rem // 70px
 );
 
 $font-families: (
@@ -59,6 +62,10 @@ $font-weights: (
 );
 
 // variables 
+
+$bg-color-main: map-get($colors, neutral, 200);
+$bg-color-body: $bg-color-main;
+
 $fs-button-mobile: map-get($sizes, 100);
 $fs-button-tablet: map-get($sizes, 200);
 $fs-button-desktop: map-get($sizes, 200);
@@ -75,7 +82,7 @@ $fs-card-title: map-get($sizes, 500);
 
 $fs-subtitle-mobile: map-get($sizes, 600);
 $fs-subtitle-tablet: map-get($sizes, 800);
-$fs-subtitle-desktop: map-get($sizes, 1000);
+$fs-subtitle-desktop: map-get($sizes, 800);
 
 $ff-main: map-get($font-families, plus-jakarta);
 $ff-button: $ff-main;
@@ -89,3 +96,4 @@ $fw-title: map-get($font-weights, bold);
 $fw-description: map-get($font-weights, medium);
 $fw-card-title: map-get($font-weights, bold);
 $fw-subtitle: map-get($font-weights, bold);
+
