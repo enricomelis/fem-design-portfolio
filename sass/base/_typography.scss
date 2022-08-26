@@ -8,9 +8,14 @@
     @include title;
 }
 
-.description {
-    @include description;
+.description__top {
+    @include description__top;
 }
+
+.description__bottom {
+    @include description__bottom;
+}
+
 
 .card-title {
     @include card-title;

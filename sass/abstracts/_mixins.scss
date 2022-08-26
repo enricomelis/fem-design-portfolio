@@ -32,7 +32,7 @@
     font-size: $fs-title-mobile;
     font-family: $ff-title;
     font-weight: $fw-title;
-    color: map-get($colors, neutral, 100);
+    color: map-get($colors, neutral, 900);
 
     @include mq(small){
         font-size: $fs-title-tablet;
@@ -47,7 +47,6 @@
     font-size: $fs-description-mobile;
     font-family: $ff-description;
     font-weight: $fw-description;
-    color: map-get($colors, neutral, 100);
 
     @include mq(small){
         font-size: $fs-description-tablet;
@@ -56,6 +55,16 @@
     @include mq(medium){
         font-size: $fs-description-desktop;
     }
+}
+
+@mixin description__top() {
+    @include description();
+    color: map-get($colors, neutral, 500);
+}
+
+@mixin description__bottom() {
+    @include description();
+    color: map-get($colors, neutral, 100);
 }
 
 @mixin card-title() {
@@ -69,7 +78,7 @@
     font-size: $fs-subtitle-mobile;
     font-family: $ff-subtitle;
     font-weight: $fw-subtitle;
-    color: map-get($colors, neutral, 100);
+    color: map-get($colors, neutral, 900);
 
     @include mq(small){
         font-size: $fs-subtitle-tablet;
