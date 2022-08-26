@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+.button {
+    border: none;
+    border-radius: 100vw;
+
+    padding: map-get($sizes, 200) map-get($sizes, 500);
+
+    @include button();
+
+    &__wob {
+        background-color: map-get($colors, accent, button__wob);
+    }
+
+    &__wop {
+        background-color: map-get($colors, accent, button__wop);
+    }
+}
