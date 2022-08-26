@@ -1,0 +1,82 @@
+@use '../abstracts/' as *;
+
+.grid-container {
+    display: grid;
+    gap: map-get($sizes, 500);
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mq(small){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include mq(medium){
+        width: 75%;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.grid-box {
+    box-sizing: border-box;
+    border-radius: 8px;
+    // padding: map-get($sizes, 500);
+    display: grid;
+    justify-self: center;
+    width: 100%;
+
+
+    svg {
+        justify-self: end;
+        position: relative;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    h2 {
+        position: relative;
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    &[aria-label="graphic-design"]{
+        grid-column: span 2;
+        grid-row: span 2;
+        gap: map-get($sizes, 1500);
+        background-color: map-get($colors, primary, graphic-design);
+    }
+    
+    &[aria-label="ux-ui"]{
+        gap: map-get($sizes, 1150);
+        background-color: map-get($colors, primary, ux-ui);
+    }
+    
+    &[aria-label="apps"]{
+        gap: map-get($sizes, 1150);
+        background-color: map-get($colors, primary, apps);
+    }
+    
+    &[aria-label="illustrations"]{
+        gap: map-get($sizes, 1150);
+        background-color: map-get($colors, primary, illustrations);
+        
+        grid-column: span 2;
+    }
+    
+    &[aria-label="photography"]{
+        gap: map-get($sizes, 1150);
+        background-color: map-get($colors, primary, photography);
+        
+        grid-column: span 2;
+    }
+    
+    &[aria-label="motion-graphics"]{
+        gap: map-get($sizes, 1150);
+        background-color: map-get($colors, primary, motion-graphics);
+        
+        grid-column: span 2;
+    }
+    
+}

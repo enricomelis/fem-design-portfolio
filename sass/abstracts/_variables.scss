@@ -3,7 +3,7 @@
 $colors: (
     primary: (
         graphic-design: hsl(252, 66%, 62%),
-        ui-ux: hsl(28, 89%, 67%),
+        ux-ui: hsl(28, 89%, 67%),
         apps: hsl(0, 78%, 79%),
         illustrations: hsl(7, 77%, 66%),
         photography: hsl(172, 46%, 57%),
@@ -26,10 +26,10 @@ $colors: (
 );
 
 $breakpoints: (
-    x-small: 25rem,
-    small: 40rem,
-    medium: 75rem,
-    large: 90rem
+    x-small: 25rem, //400px
+    small: 45rem, // 720px
+    medium: 75rem, // 1200px
+    large: 90rem // 1440px
 );
 
 $sizes: (
@@ -47,7 +47,8 @@ $sizes: (
     1150: 3rem, // 48px
     1200: 3.5rem, // 56px
     1250: 4rem,
-    1300: 4.375rem // 70px
+    1300: 4.375rem, // 70px
+    1500: 6rem // 96px
 );
 
 $font-families: (
