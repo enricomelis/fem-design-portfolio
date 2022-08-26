@@ -22,7 +22,6 @@
 .grid-box {
     box-sizing: border-box;
     border-radius: 8px;
-    // padding: map-get($sizes, 500);
     display: grid;
     justify-self: center;
     width: 100%;
@@ -31,14 +30,14 @@
     svg {
         justify-self: end;
         position: relative;
-        top: 1rem;
-        right: 1rem;
+        top: map-get($sizes, 500);
+        right: map-get($sizes, 500);
     }
 
     h2 {
         position: relative;
-        bottom: 1rem;
-        left: 1rem;
+        bottom: map-get($sizes, 500);
+        left: map-get($sizes, 500);
     }
 
     &[aria-label="graphic-design"]{
