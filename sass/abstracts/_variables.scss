@@ -1,0 +1,91 @@
+// maps 
+
+$colors: (
+    primary: (
+        graphic-design: hsl(252, 66%, 62%),
+        ui-ux: hsl(28, 89%, 67%),
+        apps: hsl(0, 78%, 79%),
+        illustrations: hsl(7, 77%, 66%),
+        photography: hsl(172, 46%, 57%),
+        motion-graphics: hsl(314, 45, 23)
+    ),
+    neutral: (
+        100: hsl(28, 100%, 97%),
+        500: hsl(30, 5%, 45%),
+        900: hsl(0, 0%, 1%)
+    ),
+    accent: (
+        button-1: hsl(0, 0%, 0%),
+        button-1-hover: hsl(252, 66%, 62%),
+        button-2: hsl(7, 77%, 66%),
+        button-2-hover: hsl(28, 89%, 67%),
+        arrows: hsl(0, 0%, 0%),
+        arrows-hover: hsl(252, 66%, 62%)
+    )
+);
+
+$breakpoints: (
+    x-small: 25rem,
+    small: 40rem,
+    medium: 75rem,
+    large: 90rem
+);
+
+$sizes: (
+    100: .875rem,
+    200: 1rem,
+    300: 1.125rem,
+    400: 1.25rem,
+    500: 1.5rem,
+    600: 1.625rem,
+    700: 1.75rem,
+    800: 2rem,
+    900: 2.25rem,
+    1000: 2.5rem,
+    1100: 2.75rem,
+    1200: 3.5rem,
+    1300: 4.375rem
+);
+
+$font-families: (
+    plus-jakarta: 'Plus Jakarta'
+);
+
+$font-weights: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700
+);
+
+// variables 
+$fs-button-mobile: map-get($sizes, 100);
+$fs-button-tablet: map-get($sizes, 200);
+$fs-button-desktop: map-get($sizes, 200);
+
+$fs-title-mobile: map-get($sizes, 900);
+$fs-title-tablet: map-get($sizes, 1100);
+$fs-title-desktop: map-get($sizes, 1200);
+
+$fs-description-mobile: map-get($sizes, 200);
+$fs-description-tablet: map-get($sizes, 300);
+$fs-description-desktop: map-get($sizes, 300);
+
+$fs-card-title: map-get($sizes, 500);
+
+$fs-subtitle-mobile: map-get($sizes, 600);
+$fs-subtitle-tablet: map-get($sizes, 800);
+$fs-subtitle-desktop: map-get($sizes, 1000);
+
+$ff-main: map-get($font-families, plus-jakarta);
+$ff-button: $ff-main;
+$ff-title: $ff-main;
+$ff-description: $ff-main;
+$ff-card-title: $ff-main;
+$ff-subtitle: $ff-main;
+
+$fw-button: map-get($font-weights, bold);
+$fw-title: map-get($font-weights, bold);
+$fw-description: map-get($font-weights, medium);
+$fw-card-title: map-get($font-weights, bold);
+$fw-subtitle: map-get($font-weights, bold);

@@ -1,0 +1,81 @@
+@use './variables' as *;
+
+@mixin hover() {
+    cursor: pointer;
+    @content;
+}
+
+@mixin mq($key) {
+    $size: map-get($breakpoints, $key);
+    
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin button() {
+    font-size: $fs-button-mobile;
+    font-family: $ff-button;
+    font-weight: $fw-button;
+    color: map-get($colors, neutral, 100);
+
+    @include mq(small){
+        font-size: $fs-button-tablet;
+    }
+
+    @include mq(medium){
+        font-size: $fs-button-desktop;
+    }
+}
+
+@mixin title() {
+    font-size: $fs-title-mobile;
+    font-family: $ff-title;
+    font-weight: $fw-title;
+    color: map-get($colors, neutral, 100);
+
+    @include mq(small){
+        font-size: $fs-title-tablet;
+    }
+
+    @include mq(medium){
+        font-size: $fs-title-desktop;
+    }
+}
+
+@mixin description() {
+    font-size: $fs-description-mobile;
+    font-family: $ff-description;
+    font-weight: $fw-description;
+    color: map-get($colors, neutral, 100);
+
+    @include mq(small){
+        font-size: $fs-description-tablet;
+    }
+
+    @include mq(medium){
+        font-size: $fs-description-desktop;
+    }
+}
+
+@mixin card-title() {
+    font-size: $fs-card-title;
+    font-family: $ff-card-title;
+    font-weight: $fw-card-title;
+    color: map-get($colors, neutral, 100);
+}
+
+@mixin subtitle() {
+    font-size: $fs-subtitle-mobile;
+    font-family: $ff-subtitle;
+    font-weight: $fw-subtitle;
+    color: map-get($colors, neutral, 100);
+
+    @include mq(small){
+        font-size: $fs-subtitle-tablet;
+    }
+
+    @include mq(medium){
+        font-size: $fs-subtitle-desktop;
+    }
+}
