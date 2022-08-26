@@ -19,6 +19,7 @@
     font-family: $ff-button;
     font-weight: $fw-button;
     color: map-get($colors, neutral, 100);
+    @include hover();
 
     @include mq(small){
         font-size: $fs-button-tablet;
