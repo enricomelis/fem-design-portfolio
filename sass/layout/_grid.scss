@@ -14,6 +14,7 @@
         grid-template-columns: repeat(4, 1fr);
     }
     @include mq(medium){
+        margin-top: 4rem;
         width: 75%;
         grid-template-columns: repeat(6, 1fr);
     }

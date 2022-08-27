@@ -10,9 +10,17 @@
 
     &__wob {
         background-color: map-get($colors, accent, button__wob);
+
+        &:where(:hover, :focus){
+            @include button__wob;
+        }
     }
 
     &__wop {
         background-color: map-get($colors, accent, button__wop);
+
+        &:where(:hover, :focus){
+            @include button__wop;
+        }
     }
 }

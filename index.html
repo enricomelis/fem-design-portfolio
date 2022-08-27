@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <nav role="navigation"> <!-- top buttons -->
       <div class="flex-nav">
         <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
@@ -85,12 +86,14 @@
 
     <main role="main"> <!-- description of the work done -->
       <img src="./assets/image-amy.webp" alt="">
-      <h1 class="title">I’m Amy, and I’d love to work on your next project</h1>
-      <p class="description__top">I love working with others to create beautiful design solutions. 
-        I’ve designed everything from brand illustrations to complete mobile apps. 
-        I’m also handy with a camera!
-      </p>
-      <button class="button button__wop">Free Consultation</button>
+      <div class="flex-wrapper">
+        <h3 class="subtitle__top">I’m Amy, and I’d love to work on your next project</h3>
+        <p class="description__top">I love working with others to create beautiful design solutions.
+          I’ve designed everything from brand illustrations to complete mobile apps.
+          I’m also handy with a camera!
+        </p>
+        <button class="button button__wop">Free Consultation</button>
+      </div>
     </main>
 
     <footer class="booking"> <!-- carousel with "my work" -->
@@ -98,7 +101,7 @@
       <!-- carousel here -->
       <div class="footer__box">
         <h3 class="subtitle__bottom">Book a call with me</h3>
-        <p class="descrption__bottom">
+        <p class="description__bottom">
           I’d love to have a chat to see how I can help you. 
           The best first step is for us to discuss your project during a free consultation. 
           Then we can move forward from there.
@@ -118,5 +121,6 @@
         <button class="button button__wob">Free Consultation</button>
       </div>
     </nav>
+
   </body>
 </html>

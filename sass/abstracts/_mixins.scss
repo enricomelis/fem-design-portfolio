@@ -26,6 +26,20 @@
     }
 }
 
+@mixin button__wob {
+    @include button;
+    @include hover(){
+        background-color: map-get($colors, accent, button__wob-hover);
+    }
+}
+
+@mixin button__wop {
+    @include button;
+    @include hover(){
+        background-color: map-get($colors, accent, button__wop-hover);
+    }
+}
+
 @mixin title() {
     font-size: $fs-title-mobile;
     line-height: $lh-title;
@@ -94,6 +108,7 @@
 
 @mixin subtitle__top {
     @include subtitle();
+    
     color: map-get($colors, neutral, 900);
 }
 

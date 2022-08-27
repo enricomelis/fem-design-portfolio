@@ -3,3 +3,77 @@
 body {
     background-color: $bg-color-body;
 }
+
+main {
+    padding: map-get($sizes, 200);
+    margin: map-get($sizes, 1500) auto;
+
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+
+    @include mq(small) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: start;
+
+        width: 50%;
+        margin-right: map-get($sizes, 700);
+    }
+
+    @include mq(medium) {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        padding: 0;
+
+        width: 75%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    @include mq(large){
+        gap: 22.5rem;
+    }
+}
+
+main img {
+    width: 90%;
+    justify-self: center;
+
+    @include mq(small) {
+        position: absolute;
+        width: 22.75rem;
+        left: -103%;
+    }
+
+    @include mq(medium) {
+        position: static;
+        width: 27.75rem;
+    }
+}
+
+.flex-wrapper {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    @include mq(small){
+        gap: 1.0625rem;
+        justify-content: space-between;
+    }
+}
+
+main .button {
+    width: 60%;
+    margin: 0 auto;
+
+    @include mq(small){
+        width: 80%;
+        margin-left: 0;
+    }
+
+    @include mq(medium){
+        width: 50%;
+    }
+}
