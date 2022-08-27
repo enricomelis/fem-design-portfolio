@@ -2,7 +2,7 @@
 
 .grid-container {
     display: grid;
-    gap: map-get($sizes, 500);
+    gap: get-size(500);
     max-width: 90%;
     margin: 0 auto;
     justify-content: center;
@@ -31,49 +31,49 @@
     svg {
         justify-self: end;
         position: relative;
-        top: map-get($sizes, 500);
-        right: map-get($sizes, 500);
+        top: get-size(500);
+        right: get-size(500);
     }
 
     h2 {
         position: relative;
-        bottom: map-get($sizes, 500);
-        left: map-get($sizes, 500);
+        bottom: get-size(500);
+        left: get-size(500);
     }
 
     &[aria-label="graphic-design"]{
         grid-column: span 2;
         grid-row: span 2;
-        gap: map-get($sizes, 1500);
+        gap: get-size(1500);
         background-color: map-get($colors, primary, graphic-design);
     }
     
     &[aria-label="ux-ui"]{
-        gap: map-get($sizes, 1150);
+        gap: get-size(1150);
         background-color: map-get($colors, primary, ux-ui);
     }
     
     &[aria-label="apps"]{
-        gap: map-get($sizes, 1150);
+        gap: get-size(1150);
         background-color: map-get($colors, primary, apps);
     }
     
     &[aria-label="illustrations"]{
-        gap: map-get($sizes, 1150);
+        gap: get-size(1150);
         background-color: map-get($colors, primary, illustrations);
         
         grid-column: span 2;
     }
     
     &[aria-label="photography"]{
-        gap: map-get($sizes, 1150);
+        gap: get-size(1150);
         background-color: map-get($colors, primary, photography);
         
         grid-column: span 2;
     }
     
     &[aria-label="motion-graphics"]{
-        gap: map-get($sizes, 1150);
+        gap: get-size(1150);
         background-color: map-get($colors, primary, motion-graphics);
         
         grid-column: span 2;

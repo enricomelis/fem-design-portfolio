@@ -4,9 +4,11 @@ body {
     background-color: $bg-color-body;
 }
 
+
+
 main {
-    padding: map-get($sizes, 200);
-    margin: map-get($sizes, 1500) auto;
+    padding: get-size(200);
+    margin: get-size(1500) auto;
 
     display: grid;
     gap: 1.5rem;
@@ -19,7 +21,7 @@ main {
         text-align: start;
 
         width: 50%;
-        margin-right: map-get($sizes, 700);
+        margin-right: get-size(700);
     }
 
     @include mq(medium) {

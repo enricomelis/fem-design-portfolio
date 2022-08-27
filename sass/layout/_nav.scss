@@ -8,26 +8,26 @@
 }
 
 .flex-nav > svg {
-    width: map-get($sizes, 1150);
-    height: map-get($sizes, 1150);
+    width: get-size(1150);
+    height: get-size(1150);
 
     @include mq(small) {
-        width: map-get($sizes, 1250);
-        height: map-get($sizes, 1250);
+        width: get-size(1250);
+        height: get-size(1250);
     }
 
     circle {
 
         @include mq(small) {
-            cx: map-get($sizes, 800);
-            cy: map-get($sizes, 800);
-            r: map-get($sizes, 100);
+            cx: get-size(800);
+            cy: get-size(800);
+            r: get-size(100);
         }
     }
 }
 
 nav {
-    padding: map-get($sizes, 200);
+    padding: get-size(200);
     text-align: center;
 
     h1 {

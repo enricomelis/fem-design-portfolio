@@ -4,7 +4,8 @@
     border: none;
     border-radius: 100vw;
 
-    padding: map-get($sizes, 200) map-get($sizes, 500);
+    padding: get-size(200) get-size(500);
+    
 
     @include button();
 
