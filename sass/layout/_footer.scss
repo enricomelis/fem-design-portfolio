@@ -1,0 +1,68 @@
+@use '../abstracts/' as *;
+
+.booking h2 {
+    text-align: center;
+}
+
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: get-size(800);
+}
+
+.carousel__scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 85%;
+    gap: get-size(300);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.carousel__element {
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+.footer__box {
+    background-color: black;
+    padding: min(5%, get-size(1500));
+    border-radius: 10px;
+    width: 90%;
+    margin: get-size(1200) auto get-size(400) auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: get-size(400);
+
+    h3, p {
+        margin: auto;
+        text-align: center;
+
+        @include mq(small) {
+            width: 75%;
+        }
+    }
+
+    button {
+        width: 60%;
+        margin: auto;
+        @include mq(small) {
+            width: 40%;
+        }
+    }
+
+    @include mq(medium) {
+        flex-direction: row;
+
+        h3, p {
+            text-align: start;
+            margin: 0;
+            width: 65%;
+        }
+    }
+}

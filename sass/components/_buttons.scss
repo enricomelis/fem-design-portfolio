@@ -24,4 +24,27 @@
             @include button__wop;
         }
     }
+
+    &__arrow {
+        background-color: map-get($colors, accent, arrows);
+        border-radius: 50%;
+        width: get-size(1250);
+        font-size: get-size(500);
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+        &:where(:hover, :focus){
+            @include button__arrow;
+            font-size: get-size(500);
+        }
+    }
+}
+
+.button-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7%;
 }

@@ -19,6 +19,8 @@
     font-family: $ff-button;
     font-weight: $fw-button;
     color: map-get($colors, neutral, 100);
+
+    border: none;
     @include hover();
 
     @include mq(small){
@@ -37,6 +39,13 @@
     @include button;
     @include hover(){
         background-color: map-get($colors, accent, button__wop-hover);
+    }
+}
+
+@mixin button__arrow {
+    @include button();
+    @include hover(){
+        background-color: map-get($colors, accent, arrows-hover);
     }
 }
 

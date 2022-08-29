@@ -97,15 +97,42 @@
     </main>
 
     <footer class="booking"> <!-- carousel with "my work" -->
-      <h2 class="subtitle__top">My Work</h2>
-      <!-- carousel here -->
+      <div class="carousel">
+        <h2 class="subtitle__top">My Work</h2>
+        <!-- carousel here -->
+
+        <div class="carousel__scroller">
+          <div class="carousel__element" aria-details="one">
+            <img src="./assets/image-slide-1.jpg" alt="">
+          </div>
+          <div class="carousel__element" aria-details="two">
+            <img src="./assets/image-slide-2.jpg" alt="">
+          </div>
+          <div class="carousel__element" aria-details="three">
+            <img src="./assets/image-slide-3.jpg" alt="">
+          </div>
+          <div class="carousel__element" aria-details="four">
+            <img src="./assets/image-slide-4.jpg" alt="">
+          </div>
+          <div class="carousel__element" aria-details="five">
+            <img src="./assets/image-slide-5.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="button-flex">
+          <button class="button button__arrow prev">&larr;</button>
+          <button class="button button__arrow next">&rarr;</button>
+        </div>
+      </div>
       <div class="footer__box">
-        <h3 class="subtitle__bottom">Book a call with me</h3>
-        <p class="description__bottom">
-          I’d love to have a chat to see how I can help you. 
-          The best first step is for us to discuss your project during a free consultation. 
-          Then we can move forward from there.
-        </p>
+        <div class="flex-wrapper">
+          <h3 class="subtitle__bottom">Book a call with me</h3>
+          <p class="description__bottom">
+            I’d love to have a chat to see how I can help you.
+            The best first step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
         <button class="button button__wop">Free Consultation</button>
       </div>
     </footer>
