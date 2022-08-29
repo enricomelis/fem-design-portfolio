@@ -2,30 +2,31 @@
 
 .booking h2 {
     text-align: center;
+    margin-bottom: get-size(500);
 }
 
 
-.carousel {
-    display: flex;
-    flex-direction: column;
-    gap: get-size(800);
-}
+// .carousel {
+//     display: flex;
+//     flex-direction: column;
+//     gap: get-size(800);
+// }
 
-.carousel__scroller {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 85%;
-    gap: get-size(300);
+// .carousel__scroller {
+//     display: grid;
+//     grid-auto-flow: column;
+//     grid-auto-columns: 85%;
+//     gap: get-size(300);
 
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-}
+//     overflow-x: auto;
+//     overscroll-behavior-inline: contain;
+// }
 
-.carousel__element {
-    img {
-        border-radius: 10px;
-    }
-}
+// .carousel__element {
+//     img {
+//         border-radius: 10px;
+//     }
+// }
 
 
 .footer__box {
