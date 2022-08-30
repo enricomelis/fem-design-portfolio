@@ -8,19 +8,22 @@ body {
 
 main {
     padding: get-size(200);
-    margin: get-size(1500) auto;
+    margin-block: get-size(1500);
 
     display: grid;
     gap: 1.5rem;
     text-align: center;
 
     @include mq(small) {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         position: relative;
+        left: -80px;
         text-align: start;
+        gap: 3rem;
 
-        width: 50%;
+        grid-template-columns: 1fr 1fr;
+
+        width: 105%;
         margin-right: get-size(700);
     }
 
@@ -45,9 +48,8 @@ main img {
     justify-self: center;
 
     @include mq(small) {
-        position: absolute;
-        width: 22.75rem;
-        left: -103%;
+        justify-self: center;
+        align-self: center;
     }
 
     @include mq(medium) {

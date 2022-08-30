@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    <script src="./app/a11y-slider.js" defer></script>
+    <script src="./app/main.js" defer></script>
  
   </head>
   <body>
@@ -102,29 +104,23 @@
       <h2 class="subtitle__top">My Work</h2>
       <div class="carousel">
         <!-- carousel here -->
-
-        <!-- <ul class="carousel__scroller">
-          <li class="carousel__element" aria-details="one"> 
-            <img src="./assets/image-slide-1.jpg" alt="">
+        <ul class="slider">
+          <li class="slider-element">
+            <img src="/assets/image-slide-1.jpg" alt="" srcset="">
           </li>
-          <li class="carousel__element" aria-details="two">
-            <img src="./assets/image-slide-2.jpg" alt="">
+          <li class="slider-element">
+            <img src="/assets/image-slide-2.jpg" alt="" srcset="">
           </li>
-          <li class="carousel__element" aria-details="three">
-            <img src="./assets/image-slide-3.jpg" alt="">
+          <li class="slider-element">
+            <img src="/assets/image-slide-3.jpg" alt="" srcset="">
           </li>
-          <li class="carousel__element" aria-details="four">
-            <img src="./assets/image-slide-4.jpg" alt="">
+          <li class="slider-element">
+            <img src="/assets/image-slide-4.jpg" alt="" srcset="">
           </li>
-          <li class="carousel__element" aria-details="five">
-            <img src="./assets/image-slide-5.jpg" alt="">
+          <li class="slider-element">
+            <img src="/assets/image-slide-5.jpg" alt="" srcset="">
           </li>
-        </ul> -->
-
-        <div class="button-flex">
-          <button class="button button__arrow prev">&larr;</button>
-          <button class="button button__arrow next">&rarr;</button>
-        </div>
+        </ul>
       </div>
       <div class="footer__box">
         <div class="flex-wrapper">

@@ -48,3 +48,47 @@
     justify-content: center;
     gap: 7%;
 }
+
+.a11y-slider-prev, .a11y-slider-next {
+    @include button;
+    width: get-size(1250);
+    height: get-size(1250);
+    background-color: map-get($colors, accent, arrows);
+    border-radius: 50%;
+    width: get-size(1250);
+    font-size: get-size(500);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    
+
+    align-self: center;
+    grid-row-start: 2;
+    
+    &:where(:hover, :focus){
+        @include button__arrow;
+        font-size: get-size(500);
+    }
+}
+
+.a11y-slider-next {
+    justify-self: start;
+}
+
+.a11y-slider-prev {
+    justify-self: end;
+}
+
+.a11y-slider-container {
+    display: grid;
+    grid-template-rows: 20% 75%;
+    gap: 1rem;
+}
+
+.a11y-slider-container > ul {
+    grid-row-start: 1;
+    grid-column: span 2;
+}
